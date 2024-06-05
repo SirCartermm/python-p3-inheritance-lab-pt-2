@@ -39,3 +39,7 @@ class TestChattyStudent(unittest.TestCase):
     chatty_student.raise_hand()
     expected_output = "Pick me!\n" * 10
     self.assertEqual(mock_stdout.getvalue(), expected_output)
+
+
+if __name__ == '__main__':
+    unittest.main()

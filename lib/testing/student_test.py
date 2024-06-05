@@ -3,7 +3,7 @@ from unittest.mock import patch
 from io import StringIO
 from student import Student, ChattyStudent
 
-class TestStudent(inittest.TestCase):
+class TestStudent(unittest.TestCase):
     @patch('sys.stdout', new_callable=StringIO)
     def test_Student_hello(self, mock_stdout):
         student = Student()
@@ -21,7 +21,7 @@ class TestChattyStudent(unittest.TestCase):
     def test_chatty_student_hello(Self, mock_stdout):
         chatty_student = ChattyStudent()
         chatty_student.hello()
-        self.assertEqual(mock_stdout.getvalue().strip(), "Hey ther! I'm so excited to learn stuff.")
+        Self.assertEqual(mock_stdout.getvalue().strip(), "Hey ther! I'm so excited to learn stuff.")
 
 
 class TestChattyStudent(unittest.TestCase):
@@ -38,7 +38,7 @@ class TestChattyStudent(unittest.TestCase):
     chatty_student = ChattyStudent()
     chatty_student.raise_hand()
     expected_output = "Pick me!\n" * 10
-    self.assertEqual(mock_stdout.getvalue(), expected_output)
+    Self.assertEqual(mock_stdout.getvalue(), expected_output)
 
 
 if __name__ == '__main__':

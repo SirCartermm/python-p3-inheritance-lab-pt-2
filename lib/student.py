@@ -16,7 +16,7 @@ class ChattyStudent(Student):
         print("How are you doing today? I'm okay, but I'm kind of tired. Diid you watch The Walking Dead last night? You didn't?! oh man, it was so crazy! what, you don't want any spoilers? Okay well let me just tell you who died...")
 
 
-      def raise_hand(self):
+    def raise_hand(self):
           for _ in range(10):
               super().raise_hand()
 

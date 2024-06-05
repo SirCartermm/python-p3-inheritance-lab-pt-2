@@ -1,0 +1,20 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "74:93:64:30:13:bb:5b:2c:cb:23:43:f7:bf:6e:a4:ef:13:3f:e7:31:bb:ef:2d:fc:9c:1c:3e:8c:43"
+        },
+        "pipfile-spec": 6
+    },
+    "default": {
+        "pytest": {
+            "checksum": "sha256:a348f8f45a62ba41c1a45a66a2ee5e75a7bfa7c14a1f41d8e29bfb27a5e93a2c",
+            "version": "==6.2.5"
+        }
+    },
+    "develop": {
+        "pytest-cov": {
+            "checksum": "sha256:52b1c19b62b6f7a25b93e50a1e4f6f9516500a7a1a53f65e66b5a6f22a2c07c",
+            "version": "==2.12.1"
+        }
+    }
+}
